@@ -15,7 +15,6 @@ namespace MongoDBTest.Controllers
         protected static IMongoClient client = new MongoClient("mongodb://prod:159632@ds139277.mlab.com:39277/testerkan");
         protected static IMongoDatabase database = client.GetDatabase("testerkan");
         UserList UserList;
-        // GET: Home
         public ActionResult Index()
         {
             var col = database.GetCollection<BsonDocument>("Users");
