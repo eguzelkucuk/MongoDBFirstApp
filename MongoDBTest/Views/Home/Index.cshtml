@@ -1,0 +1,22 @@
+﻿@using MongoDBTest.Models;
+@model UserList
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        Id : @Model.Id<br />
+        Name : @Model.Name<br />
+        Surname : @Model.Surname<br />
+        Department : @Model.Department<br />
+    </div>
+</body>
+</html>
